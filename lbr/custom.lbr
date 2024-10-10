@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="3" visible="yes" active="yes"/>
@@ -99,11 +99,11 @@
 <wire x1="2.4" y1="0.9" x2="2.4" y2="-0.9" width="0.127" layer="39"/>
 <wire x1="2.4" y1="-0.9" x2="-2.4" y2="-0.9" width="0.127" layer="39"/>
 <wire x1="-2.4" y1="-0.9" x2="-2.4" y2="0.9" width="0.127" layer="39"/>
-<circle x="-2.08296875" y="0.62703125" radius="0.0451625" width="0.127" layer="21"/>
-<wire x1="-1.8209" y1="0.689228125" x2="1.794415625" y2="0.689228125" width="0.127" layer="21"/>
-<wire x1="1.794415625" y1="0.689228125" x2="1.794415625" y2="-0.675975" width="0.127" layer="21"/>
-<wire x1="1.794415625" y1="-0.675975" x2="-1.8209" y2="-0.675975" width="0.127" layer="21"/>
-<wire x1="-1.8209" y1="-0.675975" x2="-1.8209" y2="0.689228125" width="0.127" layer="21"/>
+<circle x="-1.88296875" y="0.62703125" radius="0.0451625" width="0.127" layer="21"/>
+<wire x1="-1.4209" y1="0.689228125" x2="1.494415625" y2="0.689228125" width="0.127" layer="21"/>
+<wire x1="1.494415625" y1="0.689228125" x2="1.494415625" y2="-0.675975" width="0.127" layer="21"/>
+<wire x1="1.494415625" y1="-0.675975" x2="-1.4209" y2="-0.675975" width="0.127" layer="21"/>
+<wire x1="-1.4209" y1="-0.675975" x2="-1.4209" y2="0.689228125" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -155,7 +155,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED" prefix="D">
+<deviceset name="LED" prefix="D" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="0"/>
 </gates>
