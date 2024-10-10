@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="3" visible="yes" active="yes"/>
@@ -158,10 +158,10 @@
 <smd name="12" x="0.5" y="0.9125" dx="0.25" dy="0.475" layer="1"/>
 <smd name="13" x="0" y="0.9125" dx="0.25" dy="0.475" layer="1"/>
 <smd name="14" x="-0.5" y="0.9125" dx="0.25" dy="0.475" layer="1"/>
-<wire x1="-1.9" y1="1.9" x2="-1.9" y2="-1.9" width="0.05" layer="39"/>
-<wire x1="-1.9" y1="-1.9" x2="1.9" y2="-1.9" width="0.05" layer="39"/>
-<wire x1="1.9" y1="-1.9" x2="1.9" y2="1.9" width="0.05" layer="39"/>
-<wire x1="1.9" y1="1.9" x2="-1.9" y2="1.9" width="0.05" layer="39"/>
+<wire x1="-2.4" y1="2.4" x2="-2.4" y2="-2.4" width="0.05" layer="39"/>
+<wire x1="-2.4" y1="-2.4" x2="2.4" y2="-2.4" width="0.05" layer="39"/>
+<wire x1="2.4" y1="-2.4" x2="2.4" y2="2.4" width="0.05" layer="39"/>
+<wire x1="2.4" y1="2.4" x2="-2.4" y2="2.4" width="0.05" layer="39"/>
 <circle x="-1.69701875" y="0.9602125" radius="0.040503125" width="0.2" layer="21"/>
 <wire x1="-1.5" y1="1.2" x2="1.5" y2="1.2" width="0.2" layer="51"/>
 <wire x1="1.5" y1="1.2" x2="1.5" y2="-1.2" width="0.2" layer="51"/>
@@ -224,9 +224,9 @@
 <pin name="SDO/SA0" x="-17.78" y="15.24" length="middle"/>
 <pin name="SDX" x="-17.78" y="10.16" length="middle"/>
 <pin name="SCX" x="-17.78" y="5.08" length="middle"/>
-<pin name="INT1" x="-17.78" y="0" length="middle"/>
-<pin name="VDDIO" x="-17.78" y="-5.08" length="middle"/>
-<pin name="GND1" x="-17.78" y="-10.16" length="middle"/>
+<pin name="INT1" x="-17.78" y="-5.08" length="middle"/>
+<pin name="VDDIO" x="-17.78" y="-10.16" length="middle"/>
+<pin name="GND" x="-17.78" y="-15.24" length="middle"/>
 <pin name="VDD" x="17.78" y="15.24" length="middle" rot="R180"/>
 <pin name="INT2" x="17.78" y="10.16" length="middle" rot="R180"/>
 <pin name="OCS_AUX" x="17.78" y="5.08" length="middle" rot="R180"/>
@@ -235,7 +235,6 @@
 <pin name="SCL" x="17.78" y="-10.16" length="middle" rot="R180"/>
 <pin name="SDA" x="17.78" y="-15.24" length="middle" rot="R180"/>
 <text x="-5.08" y="22.86" size="1.778" layer="95">&gt;Name</text>
-<pin name="GND2" x="-17.78" y="-15.24" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -308,8 +307,7 @@
 <device name="497-18367-1-ND-IMU" package="IMU_LSM6DSO">
 <connects>
 <connect gate="G$1" pin="CS" pad="12"/>
-<connect gate="G$1" pin="GND1" pad="6"/>
-<connect gate="G$1" pin="GND2" pad="7"/>
+<connect gate="G$1" pin="GND" pad="6 7"/>
 <connect gate="G$1" pin="INT1" pad="4"/>
 <connect gate="G$1" pin="INT2" pad="9"/>
 <connect gate="G$1" pin="OCS_AUX" pad="10"/>
