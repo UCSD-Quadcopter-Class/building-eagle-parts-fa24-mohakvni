@@ -207,7 +207,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="NMOSFET">
+<deviceset name="NMOSFET" prefix="Q">
 <gates>
 <gate name="G$1" symbol="NMOSFET" x="0" y="0"/>
 </gates>
@@ -220,7 +220,7 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="CREATOR" value="Mohak Vaswani" constant="no"/>
+<attribute name="CREATOR" value="Mohak Vaswani"/>
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="SI2302CDS-T1-E3CT-ND"/>
 </technology>
